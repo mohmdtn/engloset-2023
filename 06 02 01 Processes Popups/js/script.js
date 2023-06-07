@@ -6,15 +6,6 @@ $(document).ready(function () {
         },
     });
 
-    
-    // swiper.on('reachEnd', function () {
-    //     $(".swiper-pagination").addClass("d-none");
-    // });
-
-
-
-
-
     const ctx = document.getElementById('myChart').getContext('2d');
     var labels = ['a', 'b', 'c', 'd', 'e'];
     var data = ['1', '7', '5', '10', '8'];
@@ -49,6 +40,5 @@ $(document).ready(function () {
             },
         }
     });
-
 
 });

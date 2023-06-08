@@ -4,6 +4,10 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true,
         },
+        allowSlidePrev: false,
+        navigation: {
+            nextEl: '.next-btn',
+        },
     });
 
     const ctx = document.getElementById('myChart').getContext('2d');

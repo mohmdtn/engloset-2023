@@ -66,6 +66,11 @@
     overflow: hidden;
     text-align: center;
     padding: 15px;
+    min-height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 /* end slider */
 
@@ -121,12 +126,17 @@
     padding: 20px 5px;
     font-size: 14px;
     color: #707070;
+    width: 100%;
 }
 
 .prosecces-popups .slider .message-cstm{
     max-width: 70%;
     margin: 0 auto;
     font-size: 17px;
+}
+
+.prosecces-popups .slider .row{
+    width: 100%;
 }
 
 .prosecces-popups .slider .info{
@@ -217,6 +227,7 @@
     font-size: 13px;
     padding: 8px 15px;
     max-width: 280px;
+    margin-top: 30px;
 }
 .prosecces-popups .green-wrapper .slider .btn{
     background-color: #8DC04E;
@@ -276,6 +287,11 @@
 .prosecces-popups .pink-wrapper .slider .swiper-pagination-clickable .swiper-pagination-bullet-active{
     background-color: #E61F5B !important;
 }
+
+.prosecces-popups .swiper-horizontal>.swiper-pagination-bullets, .prosecces-popups .swiper-pagination-bullets.swiper-pagination-horizontal, .prosecces-popups .swiper-pagination-custom, .prosecces-popups .swiper-pagination-fraction{
+    position: absolute !important;
+    bottom: 50px !important;
+}
 /* end of slider pagination */
 
 @media screen and (max-width: 1200px) {
@@ -316,5 +332,16 @@
     .prosecces-popups .bg-wrapper{
         max-width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 338px) {
+    .prosecces-popups .slider .mySwiper .swiper-slide{
+        min-height: 500px;
+    }
+
+    .prosecces-popups .slider{
+        padding: 10px;
+        max-width: 100vw;
     }
 }

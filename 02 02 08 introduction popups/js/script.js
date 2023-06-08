@@ -5,6 +5,9 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true,
         },
+        navigation: {
+            nextEl: '.next-btn',
+        },
     });
 
     if ($(".green").hasClass('deactive')) {
@@ -22,4 +25,12 @@ $(document).ready(function () {
     if ($(".pink").hasClass('deactive')) {
         $(".pink-slide").remove();
     }
+
+    $(".image").click(function (e) {
+        console.log(e);
+        if (!$(this).hasClass('deactive')) {
+            let index = $(this).data("index");
+            swiper.slideTo(index);
+        }
+    });
 });

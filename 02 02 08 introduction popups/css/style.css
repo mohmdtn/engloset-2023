@@ -38,6 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    cursor: pointer;
 }
 
 .introduction-popups .images .image p {
@@ -97,6 +98,26 @@
     color: #E61F5B;
 }
 
+.introduction-popups .green-bg {
+    background: #8DC04E;
+}
+
+.introduction-popups .orange-bg {
+    background: #E95328;
+}
+
+.introduction-popups .blue-bg {
+    background: #438ECC;
+}
+
+.introduction-popups .purple-bg {
+    background: #5A4495;
+}
+
+.introduction-popups .pink-bg {
+    background: #E61F5B;
+}
+
 /* /slider settings */
 .introduction-popups .slider {
     position: relative;
@@ -117,6 +138,7 @@
     overflow: hidden;
     text-align: center;
     padding: 20px;
+    padding-bottom: 5px;
     border: 2px solid #DCDCDC;
     text-align: center;
     border-radius: 10px;
@@ -135,6 +157,10 @@
 
 .introduction-popups .slider .swiper-pagination-clickable .swiper-pagination-bullet-active {
     background-color: #8F8F8F !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 45px !important;
 }
 /* \slider settings */
 
@@ -155,18 +181,25 @@
     margin-bottom: 80px;
 }
 
+.introduction-popups .slider .next-btn{
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 25px;
+    max-width: 280px;
+}
+
 
 @media screen and (max-width: 992px) {
     .introduction-popups .slider .swiper-slide img {
         width: 100px;
     }
-    
-    .introduction-popups .slider .swiper-slide{
-        padding-bottom: 35px;
-    }
 }
 
 @media screen and (max-width: 768px) {
+    .introduction-popups{
+        padding: 5px;
+    }
+
     .introduction-popups .images .image {
         max-width: 42px;
     }
@@ -179,8 +212,10 @@
     .introduction-popups .slider .swiper-slide img {
         width: 100px;
     }
+}
 
+@media screen and (max-width: 345px) {
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-        bottom: 15px !important;
+        bottom: 60px !important;
     }
 }

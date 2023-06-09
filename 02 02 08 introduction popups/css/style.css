@@ -10,6 +10,7 @@
     text-align: right;
     font-family: "iransans";
     padding: 20px;
+    height: 100vh;
 }
 
 .introduction-popups img {
@@ -144,6 +145,7 @@
     background-color: #F0F0F0;
     user-select: none;
     cursor: pointer;
+    max-height: 80vh;
 }
 
 .introduction-popups .slider .swiper-pagination-bullet {
